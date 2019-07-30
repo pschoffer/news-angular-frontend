@@ -1,10 +1,15 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { NewsFeedComponent } from "./components/news-feed/news-feed.component";
+import { NotFoundComponent } from "./components/not-found/not-found.component";
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: "", component: NewsFeedComponent },
+  { path: "**", component: NotFoundComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
