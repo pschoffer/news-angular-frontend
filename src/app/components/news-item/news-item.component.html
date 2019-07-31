@@ -1,0 +1,13 @@
+<div class="row no-gutters border rounded mb-2 mt-2">
+  <div class="col p-4 d-flex flex-column position-static">
+    <strong class="d-inline-block mb-2 text-primary">{{ newsItem.category }}</strong>
+    <h3 class="mb-0">{{ newsItem.title }}</h3>
+    <div class="mb-1 text-muted">{{ newsItem.description }}</div>
+    <span class="text-primary">@{{ newsItem.source }}
+      <a href={{newsItem.link}} target="_blank">{{ linkText }}</a></span>
+  </div>
+  <div class="col-auto bg-dark">
+
+    <img *ngIf="newsItem.pictureUrl" src={{newsItem.pictureUrl}} class="m" />
+  </div>
+</div>

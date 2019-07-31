@@ -10,5 +10,8 @@ export default {
   },
   footer: {
     text: "Created by Pavel Schoffer"
+  },
+  newsItem: {
+    linkText: "Full Article"
   }
 };

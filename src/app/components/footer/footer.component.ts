@@ -12,7 +12,6 @@ export class FooterComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    console.log(texts);
     this.text = texts.footer.text;
   }
 }

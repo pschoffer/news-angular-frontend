@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { NewsFeedComponent } from './components/news-feed/news-feed.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NewsItemComponent } from './components/news-item/news-item.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     NewsFeedComponent,
     NotFoundComponent,
-    FooterComponent
+    FooterComponent,
+    NewsItemComponent
   ],
   imports: [
     BrowserModule,
