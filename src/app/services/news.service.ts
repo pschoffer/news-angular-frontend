@@ -40,7 +40,7 @@ export class NewsService {
           "https://img10.ntm.eu/om/public/img/6227841/0730162111/aterforenade-tillslut-i-se?w=790",
         date: "Wed, 31 Jul 2019 10:30:00 +0200",
         category: "Valdemarsvik",
-        source: "sek"
+        source: "From: " + source
       },
       {
         title: "Test2",
@@ -50,7 +50,7 @@ export class NewsService {
           "Polisen hittade cannabis när de kontrollerade den 21-åriga mannen i centrala Norrköping.",
         date: "Wed, 31 Jul 2019 10:30:00 +0200",
         category: "Valdemarsvik",
-        source: "sek"
+        source: "From: " + source
       },
       {
         title: "Test3",
@@ -61,7 +61,7 @@ export class NewsService {
         pictureUrl:
           "https://z.cdn-expressen.se/images/0c/d2/0cd2787d3f3d49bdafc28f13d1442f11/16x6/265@70.jpg",
         date: "Wed, 31 Jul 2019 10:30:00 +0200",
-        source: "sek"
+        source: "From: " + source
       }
     ];
 
