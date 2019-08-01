@@ -10,6 +10,7 @@ import { NewsItemModule } from "src/app/models/news-item/news-item.module";
 })
 export class NewsFeedComponent implements OnInit {
   newsItems: NewsItemModule[];
+  source: string;
 
   constructor(
     private route: ActivatedRoute,
@@ -21,6 +22,7 @@ export class NewsFeedComponent implements OnInit {
   }
 
   updateSource = (source: string) => {
+    this.source = source;
     if (source) {
       this.newsService.fetchNews(source).subscribe(this.showNewsItems);
     } else {

@@ -4,8 +4,10 @@
     <h3 class="mb-0">{{ newsItem.title }}</h3>
     <div class="mb-1 text-muted">{{ newsItem.date }}</div>
     <p class="text-primary">{{ newsItem.description }}</p>
-    <span class="text-primary">@{{ newsItem.source }}
-      <a href={{newsItem.link}} target="_blank">{{ linkText }}</a></span>
+    <span>
+      <span class="badge badge-pill badge-primary mr-2">@{{ newsItem.source }}</span>
+      <a href={{newsItem.link}} target="_blank">{{ linkText }}</a>
+    </span>
   </div>
   <div class="col-auto bg-dark">
 

@@ -9,6 +9,7 @@ import { NewsFeedComponent } from "./components/news-feed/news-feed.component";
 import { NotFoundComponent } from "./components/not-found/not-found.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { NewsItemComponent } from "./components/news-item/news-item.component";
+import { SourceInfoComponent } from './components/source-info/source-info.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NewsItemComponent } from "./components/news-item/news-item.component";
     NewsFeedComponent,
     NotFoundComponent,
     FooterComponent,
-    NewsItemComponent
+    NewsItemComponent,
+    SourceInfoComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
