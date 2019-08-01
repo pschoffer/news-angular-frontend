@@ -8,4 +8,6 @@ import { CommonModule } from "@angular/common";
 export class SourceModule {
   id: string;
   title: string;
+  description: string;
+  newsUrl: string;
 }

@@ -39,7 +39,7 @@ export class HeaderComponent implements OnInit {
 
   updateLinksFromSources = (sources: SourceModule[]) => {
     const sourcesLinks: LinkModule[] = sources.map(this.mapSourceToLink);
-
+    console.log(sources);
     this.links = [homeLink].concat(sourcesLinks);
   };
 }

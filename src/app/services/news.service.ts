@@ -1,28 +1,24 @@
 import { Injectable } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
 import { Observable, of } from "rxjs";
 import { SourceModule } from "../models/source/source.module";
 import { NewsItemModule } from "../models/news-item/news-item.module";
+import config from "../config";
+
+const newsSorcesUrl = config.backendEndpoint + config.newsSourcesPath;
 
 @Injectable({
   providedIn: "root"
 })
 export class NewsService {
-  constructor() {}
+  constructor(private http: HttpClient) {}
 
   fetchSources = (): Observable<SourceModule[]> => {
-    // TODO: Change to the real thing
-    const tempSources: SourceModule[] = [
-      { id: "test", title: "test" },
-      { id: "test2", title: "test2" }
-    ];
-
-    return of(tempSources);
+    return this.http.get<SourceModule[]>(newsSorcesUrl);
   };
 
   fetchAllNews = (): Observable<NewsItemModule[]> => {
     // TODO: Change to the real thing
-
-    console.log("Fetching stuff");
 
     return this.fetchNews("");
   };
