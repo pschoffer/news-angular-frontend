@@ -20,6 +20,8 @@ This is a sceleton application just to show some basic approaches. Following is 
 
 - Testing!
 
+- Handling the unhappy paths (backend is down and so on).
+
 ## Run
 
 To start a local server you can run following which will start a server on [localhost:4200](http://localhost:4200/)
