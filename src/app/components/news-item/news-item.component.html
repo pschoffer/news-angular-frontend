@@ -3,14 +3,14 @@
     <strong class="d-inline-block mb-2 text-primary">{{ newsItem.category }}</strong>
     <h3 class="mb-0">{{ newsItem.title }}</h3>
     <div class="mb-1 text-muted">{{ newsItem.date }}</div>
-    <p class="text-primary">{{ newsItem.description }}</p>
+    <div class="text-primary" [innerHTML]="newsItem.description"></div>
     <span>
-      <span class="badge badge-pill badge-primary mr-2">@{{ newsItem.source }}</span>
+      <span class="badge badge-pill badge-primary mr-2">@{{ newsItem.sourceId }}</span>
       <a href={{newsItem.link}} target="_blank">{{ linkText }}</a>
     </span>
   </div>
-  <div class="col-auto bg-dark">
+  <div class="col-auto">
 
-    <img *ngIf="newsItem.pictureUrl" src={{newsItem.pictureUrl}} class="m" />
+    <img *ngIf="newsItem.imageUrl" src={{newsItem.imageUrl}} class="" />
   </div>
 </div>

@@ -7,10 +7,10 @@ import { CommonModule } from "@angular/common";
 })
 export class NewsItemModule {
   title: string;
-  pictureUrl?: string;
+  imageUrl?: string;
   description: string;
   date: string;
   category?: string;
   link: string;
-  source: string;
+  sourceId: string;
 }
