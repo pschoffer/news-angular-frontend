@@ -1,4 +1,4 @@
-# NewsAngularFrontend
+# News Angular Frontend
 
 This is a frontend of news aggregator, where I will test out Angular.
 
